@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import logo from '../../assets/logos/logo.svg';
-import '../../styles/components/_cards.scss';
 
 import FlatList from "../Flats-List/flatList"
 

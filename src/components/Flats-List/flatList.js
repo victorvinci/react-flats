@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import flatsData from '../../data/flatsData';
-import FlatCard from "../Flat-Card/flatCard";
 
 class FlatList extends Component {
   
