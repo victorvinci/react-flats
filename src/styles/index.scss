@@ -22,14 +22,18 @@ body {
   top: 0 !important;
 }
 
-.flat-list {
+.flats-list {
   padding-left: 10px;
   width: 60%;
+}
+
+.flats-list-container {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+
   .card {
-    width: calc(50% - 10px);
     margin-right: 10px;
     margin-bottom: 10px;
   }

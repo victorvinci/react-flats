@@ -19,7 +19,7 @@ class FlatList extends Component {
   render() { 
       
     return (
-      <div>
+      <div className="flats-list-container">
         {this.flatArray()}
       </div>
     )
