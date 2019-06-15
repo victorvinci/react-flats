@@ -4,7 +4,7 @@ import Flat from '../Flat-Card/flatCard'
 
 class FlatList extends Component {
   
-  flatList = () =>  { return this.props.flatsData.map((flatData) => {
+  flatList = () =>  { return this.props.flatsData.map((flatData, index) => {
     return (
       <Flat name={flatData.name} 
             price={flatData.price} 
@@ -14,6 +14,7 @@ class FlatList extends Component {
             lng={flatData.lng}
             key={flatData.lat}
             selectFlat={this.props.selectFlat}
+            index={index}
       />
     )
   })}

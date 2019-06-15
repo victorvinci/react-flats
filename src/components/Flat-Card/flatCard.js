@@ -2,7 +2,7 @@ import React from 'react';
 
 const Flat = (props) => {
   const selectFlatFunction = () => {
-    props.selectFlat(props.lat)
+    props.selectFlat(props.index)
   }
 
 
