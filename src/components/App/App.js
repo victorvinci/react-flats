@@ -6,13 +6,24 @@ import FlatList from "../Flats-List/flatList"
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {  }
+    this.state = { 
+      selectedFlat: ""
+     }
   }
+
+  selectFlat = (lat) => {
+    this.setState({
+      selectedFlat: lat
+    });
+
+    console.log(this.state.selectedFlat)
+  }
+
   render() { 
     return (
       <div>
         <div className="flats-list-container">
-          <FlatList flatsData={flatsData}/>
+          <FlatList flatsData={flatsData} selectFlat={this.selectFlat}/>
         </div>
         <div className="map-container"></div>
       </div>

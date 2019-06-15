@@ -13,6 +13,7 @@ class FlatList extends Component {
             lat={flatData.lat} 
             lng={flatData.lng}
             key={flatData.lat}
+            selectFlat={this.props.selectFlat}
       />
     )
   })}
