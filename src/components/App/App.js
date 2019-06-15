@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../../assets/logos/logo.svg';
 
+import flatsData from '../../data/flatsData';
 import FlatList from "../Flats-List/flatList"
 
 class App extends Component {
@@ -11,8 +11,8 @@ class App extends Component {
   render() { 
     return (
       <div>
-        <div className="flats-list">
-          <FlatList />
+        <div className="flats-list-container">
+          <FlatList flatsData={flatsData}/>
         </div>
         <div className="map-container"></div>
       </div>

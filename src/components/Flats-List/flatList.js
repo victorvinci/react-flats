@@ -1,25 +1,27 @@
 import React, { Component } from 'react';
 
-import flatsData from '../../data/flatsData';
+import Flat from '../Flat-Card/flatCard'
 
 class FlatList extends Component {
   
-  flatArray = () =>  { return flatsData.map((flatData) => {
+  flatList = () =>  { return this.props.flatsData.map((flatData) => {
     return (
-        <div className="card">
-          <h2 className="card-title">{flatData.name}</h2>
-          <p className="card-price">{flatData.price} {flatData.priceCurrency}</p>
-          <img className="card-img" alt="" src={flatData.imageUrl}></img>
-          <a className="card-link" href="#"></a>
-        </div>
+      <Flat name={flatData.name} 
+            price={flatData.price} 
+            currency={flatData.priceCurrency} 
+            imageUrl={flatData.imageUrl} 
+            lat={flatData.lat} 
+            lng={flatData.lng}
+            key={flatData.lat}
+      />
     )
   })}
 
   render() { 
       
     return (
-      <div className="flats-list-container">
-        {this.flatArray()}
+      <div className="flats-list">
+        {this.flatList()}
       </div>
     )
   }
