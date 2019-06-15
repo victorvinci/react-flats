@@ -7,7 +7,7 @@ const Flat = (props) => {
 
 
   return (  
-    <div className="card" onClick={selectFlatFunction}>
+    <div className={`card${props.selected ? ' active' : ''}`} onClick={selectFlatFunction}>
       <h2 className="card-title">{props.name}</h2>
       <p className="card-price">{props.price} {props.currency}</p>
       <img className="card-img" alt="" src={props.imageUrl}></img>

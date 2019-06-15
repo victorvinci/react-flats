@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import flatsData from '../../data/flatsData';
 import FlatList from "../Flats-List/flatList"
+import Map from "../Map/map"
 
 class App extends Component {
   constructor(props) {
@@ -9,6 +10,13 @@ class App extends Component {
     this.state = { 
       selectedFlat: flatsData[0]
      }
+  }
+
+  center = () => {
+    return {
+        lat: this.state.selectedFlat.lat,
+        lng: this.state.selectedFlat.lng
+    };
   }
 
   selectFlat = (index) => {
@@ -21,9 +29,9 @@ class App extends Component {
     return (
       <div>
         <div className="flats-list-container">
-          <FlatList flatsData={flatsData} selectFlat={this.selectFlat}/>
+          <FlatList flatsData={flatsData} selectFlat={this.selectFlat} selectedFlat={this.state.selectedFlat}/>
         </div>
-        <div className="map-container"></div>
+        <Map center={this.center} lat={this.state.selectedFlat.lat} lng={this.state.selectedFlat.lng}/>
       </div>
     );
   }

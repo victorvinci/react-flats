@@ -15,6 +15,7 @@ class FlatList extends Component {
             key={flatData.lat}
             selectFlat={this.props.selectFlat}
             index={index}
+            selected={flatData.name === this.props.selectedFlat.name}
       />
     )
   })}
