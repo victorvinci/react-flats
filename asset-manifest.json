@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-flats/static/css/main.440b0bd3.chunk.css",
+    "main.js": "/react-flats/static/js/main.bdb34d45.chunk.js",
+    "main.js.map": "/react-flats/static/js/main.bdb34d45.chunk.js.map",
+    "runtime~main.js": "/react-flats/static/js/runtime~main.ceb603fd.js",
+    "runtime~main.js.map": "/react-flats/static/js/runtime~main.ceb603fd.js.map",
+    "static/js/2.838d754f.chunk.js": "/react-flats/static/js/2.838d754f.chunk.js",
+    "static/js/2.838d754f.chunk.js.map": "/react-flats/static/js/2.838d754f.chunk.js.map",
+    "index.html": "/react-flats/index.html",
+    "precache-manifest.283cd49cf2872dd13c15beb226db6341.js": "/react-flats/precache-manifest.283cd49cf2872dd13c15beb226db6341.js",
+    "service-worker.js": "/react-flats/service-worker.js",
+    "static/css/main.440b0bd3.chunk.css.map": "/react-flats/static/css/main.440b0bd3.chunk.css.map"
+  }
+}
