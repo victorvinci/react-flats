@@ -31,7 +31,7 @@ class App extends Component {
         <div className="flats-list-container">
           <FlatList flatsData={flatsData} selectFlat={this.selectFlat} selectedFlat={this.state.selectedFlat}/>
         </div>
-        <Map center={this.center} lat={this.state.selectedFlat.lat} lng={this.state.selectedFlat.lng}/>
+        <Map center={this.center} lat={this.state.selectedFlat.lat} lng={this.state.selectedFlat.lng} name={this.state.selectedFlat.name}/>
       </div>
     );
   }
